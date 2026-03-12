@@ -73,12 +73,6 @@
       position: relative;
       height: 520px;
       overflow: hidden;
-      /* Hero banner image — place IMG_0580.jpg in the assets/ folder next to index.html */
-      background-image: url('Assets/IMG_0580upscaled.jpg');
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-      /* Fallback colour shown while image loads or if image is missing */
       background-color: #ffffff;
     }
     .hero::after {
@@ -128,6 +122,8 @@
     .s3 { background-image: url('Assets/plan2.jpg'); }
     .s4 { background-image: url('Assets/old%20site/4.jpg'); }
     .s5 { background-image: url('Assets/old%20site/5.jpg'); }
+    .strip-blank { background-color: #e8eeef; }
+    .img-blank { background-color: #e8eeef; }
 
     /* ═══════════════════════════════════════
        INTRO SECTION
@@ -419,10 +415,10 @@
   <!-- Photo strip (project image placeholders) -->
   <div class="hero-strip">
     <div class="strip-item"><div class="strip-inner s1"></div></div>
-    <div class="strip-item"><div class="strip-inner s2"></div></div>
+    <div class="strip-item"><div class="strip-inner strip-blank"></div></div>
     <div class="strip-item"><div class="strip-inner s3"></div></div>
-    <div class="strip-item"><div class="strip-inner s4"></div></div>
-    <div class="strip-item"><div class="strip-inner s5"></div></div>
+    <div class="strip-item"><div class="strip-inner strip-blank"></div></div>
+    <div class="strip-item"><div class="strip-inner strip-blank"></div></div>
   </div>
 
   <!-- ═══ INTRO ═══ -->
@@ -512,7 +508,7 @@
   <section id="about" class="about-section">
     <div class="about-grid">
       <div class="about-img-block">
-        <img class="about-img" src="Assets/fakejacqui.jpg" alt="Jacqui Ray — Landscape Planner">
+        <div class="about-img img-blank"></div>
         <div class="about-badge">
           25+ Years<br>Experience<br>in Landscape<br>Design &amp; Planning
         </div>
@@ -541,10 +537,10 @@
       <h2>Completed Projects</h2>
     </div>
     <div class="gallery-grid">
-      <div class="gallery-item wide"><img src="Assets/plan1a.jpg" alt="Landscape design plan"></div>
+      <div class="gallery-item wide img-blank"></div>
       <div class="gallery-item"><img src="Assets/plan2.jpg" alt="Landscape design plan"></div>
       <div class="gallery-item"><img src="Assets/plan1.jpg" alt="Landscape design plan"></div>
-      <div class="gallery-item wide"><img src="Assets/plan4.jpg" alt="Landscape design plan"></div>
+      <div class="gallery-item wide img-blank"></div>
     </div>
   </section>
 
